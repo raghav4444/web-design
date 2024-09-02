@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Acordion Component</title>
+  </head>
+  <style>
+    /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+    /* main color : #087f5b
+      grey color : #343a40
+      */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* ------------------------ */
+    /* GENERAL STYLES */
+    /* ------------------------ */
+    body {
+      font-family: "Inter", sans-serif;
+      color: #343a40;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    .pagination {
+      background-color: #759cc38e;
+      height: 50px;
+      width: 500px;
+      border: 1px solid #000;
+      display: flex;
+      gap: 12px;
+      color: #343a40;
+      align-items: center;
+      font-size: 14px;
+      justify-content: center;
+      border-radius: 10px;
+      box-shadow: 0 20px 30px rgba(82, 197, 229, 0.3);
+    }
+    .page-link {
+      font-size: 18px;
+    }
+
+    .btn {
+      color: #fff;
+      border: 1px solid #000;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #000;
+    }
+    .btn:hover {
+      background-color: #000;
+    }
+
+    .btn:hover .btn-icon {
+      stroke: #fff;
+    }
+    .btn-icon {
+      height: 24px;
+      width: 24px;
+      stroke: #000;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    .page-link:link,
+    .page-link:visited {
+      color: #343a40;
+      display: flex;
+      height: 36px;
+      width: 36px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .page-link:hover,
+    .page-link:active {
+      color: #fff;
+      background-color: #000;
+    }
+
+    /* .btn-icon:hover {
+        background-color: #087f5b;
+        color: white;
+      } */
+  </style>
+  <body>
+    <div class="pagination">
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <a href="#" class="page-link">1</a>
+      <a href="#" class="page-link">2</a>
+      <a href="#" class="page-link">3</a>
+      <a href="#" class="page-link">4</a>
+      <a href="#" class="page-link">5</a>
+      <a href="#" class="page-link">6</a>
+      <span class="dots">...</span>
+      <a href="#" class="page-link">23</a>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="btn-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
