@@ -72,7 +72,7 @@
 
     .header-container {
       width: 1200px;
-      position: absolute;
+      position: relative;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
@@ -118,12 +118,85 @@
       margin: 0 auto;
       background-color: #f7f7f7;
     }
+
+    .pagination {
+      transform: translate(25%, 400%);
+      position: absolute;
+      background-color: #759cc38e;
+      height: 50px;
+      width: 500px;
+      border: 1px solid #000;
+      display: flex;
+      gap: 12px;
+      color: #343a40;
+      align-items: center;
+      font-size: 14px;
+      justify-content: center;
+      border-radius: 10px;
+      box-shadow: 0 20px 30px rgba(82, 197, 229, 0.3);
+    }
+    .page-link {
+      font-size: 18px;
+    }
+
+    .btn1 {
+      color: #fff;
+      border: 1px solid #000;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: aqua;
+      top: 50%;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    .btn1:hover {
+      background-color: #000;
+    }
+    .btn1:hover .btn-icon {
+      box-shadow: 0 20px 30px rgba(82, 197, 229, 0.5);
+      stroke: #fff;
+    }
+    .btn-icon {
+      height: 24px;
+      width: 24px;
+      stroke: #000;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    .page-link:link,
+    .page-link:visited {
+      color: #343a40;
+      display: flex;
+      height: 36px;
+      width: 36px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .page-link:hover,
+    .page-link:active {
+      color: #fff;
+      background-color: #000;
+    }
+
+    .dots {
+      font-weight: 900;
+      color: #000;
+    }
   </style>
   <body>
     <header>
       <nav>
         <div><a href="#">LOGO</a></div>
-        <div></div><a href="#">Navigation</a></div>
+        <div><a href="#">Navigation</a></div>
       </nav>
       <div class="header-container">
         <div class="inner">
@@ -135,6 +208,48 @@
           </p>
           <a href="#" class="btn">Buy Now</a>
         </div>
+      </div>
+      <div class="pagination">
+        <button class="btn1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+        <a href="#" class="page-link">1</a>
+        <a href="#" class="page-link">2</a>
+        <a href="#" class="page-link">3</a>
+        <a href="#" class="page-link">4</a>
+        <a href="#" class="page-link">5</a>
+        <a href="#" class="page-link">6</a>
+        <span class="dots">...</span>
+        <a href="#" class="page-link">23</a>
+        <button class="btn1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="btn-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
       </div>
     </header>
     <section>
